@@ -1,0 +1,40 @@
+Car //Tên lớp
+- //Thuộc tính
+    - x : int
+    - y : int
+    - color : string 
+    - brand : string
+    - speed : number
+    - type : string
++ //Phương thức (getter / setter)
+    + move( dir : string) : void
+    + speedUp( acc : number) : void
+
+=> thiết kế
+
+Bài toán: Thi ăn táo
+Trong vườn địa dàng, có 2 người là adam và eva
+có 1 trái táo nặng 100kg, cả adam và eva cùng ăn trái táo này
+mỗi khi ăn 1 miếng(random kg) thì cân nặng của người ăn tăng random kg.
+Ăn đến khi hết táo thì thông báo ra cân nặng của mỗi người. 
+- Thiết kế class 
+
+Object - Kiểu dữ liệu đặc biệt - tương tự mảng
+
+Game 3 cây
+
+user
+    - name
+    - money
+    - cards - Lá bài
+desk - bộ bài
+    - cards
+    + creatDesk - Tạo
+    + shuffleCard - Trộn
+    + draftCard - Chia
+card
+    - value - giá trị
+    - suit - chất
+    - cardback
+
+suits - diamond (rô), heart (cơ), club(tép), spade(bích)

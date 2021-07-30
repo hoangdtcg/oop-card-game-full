@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <script src="Card.js"></script>
+    <script src="Desk.js"></script>
+    <script src="Player.js"></script>
+    <script src="Game.js"></script>
+</head>
+<style>
+    img {
+        width: 100px;
+        margin: 0 10px;
+    }
+    
+    div {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div>
+        <button onclick="play()">Play Game</button>
+    </div>
+    <!-- <div id="game"></div> -->
+
+    <!-- <div id="desk"></div>
+    <div id="player1"></div>
+    <div id="player2"></div> -->
+    <script>
+        // let desk = new Desk();
+        // let player1 = new Player("Lâm Ù Đền");
+        // let player2 = new Player("Phúc Tất Tay");
+
+        // desk.createDesk();
+        // desk.shuffleCard();
+
+        // player1.hands = desk.getDrawCard(3);
+        // player2.hands = desk.getDrawCard(3);
+
+        // player1.showHands('player1');
+        // player2.showHands('player2');
+
+        // if (player1.getSumOfHand() > player2.getSumOfHand()) {
+        //     alert(player1.name + " Win");
+        // } else if (player1.getSumOfHand() < player2.getSumOfHand()) {
+        //     alert(player2.name + " Win");
+        // } else {
+        //     alert("Hòa");
+        // }
+
+
+        // desk.showAll('desk');
+        let game = new Game('game-card', 2);
+        game.createUI();
+
+        function play() {
+            game.start();
+            game.drawCardToPlayer();
+        }
+    </script>
+</body>
+
+</html>
